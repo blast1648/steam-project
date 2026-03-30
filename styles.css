@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(215, 253, 245);
+}
+
+h5 {
+    border: 2px solid powderblue; /* Определяет размер границы */
+    padding: 10px; /* Определяет отсуп между текстом и границей */
+    margin: 15px; /* Определяет отсуп за пределаами границы */
+}
+
+a { /* Зеленый цвет ссылок, не подчеркивается */
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover { /* При наведении на ссылку она становится красной и подчеркивается */
+  color: red;
+  background-color: transparent;
+  text-decoration: underline; 
+}
+
+table, th, td {
+  border :1px solid white; /* Ширина границ таблицы + цвет, цвет можно также установить через border-color */
+  border-collapse: collapse; /* Чтоб не было обводки */
+  border-radius: 10px; /* Округление */
+  border-style: dashed; /* Стиль границ таблицы */
+}
+
+.hades:hover {
+  background-color: #6A2113;
+  color: #FDAB5C;
+  box-shadow: 0 0 15px rgba(253, 171, 92, 0.4);
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.elden-ring:hover {
+  background-color: #253A37;
+  color: #F5CC69;
+  box-shadow: 0 0 15px rgba(226, 177, 87, 0.4);
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.verdict:hover {
+  background-color: #2A2424;
+  box-shadow: 0 0 18px rgba(226, 177, 87, 0.25);
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+/*  */

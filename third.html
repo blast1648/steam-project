@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Steam</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS (внешний CSS) подключается через link rel -->
+</head>
+
+<body style="background-image:url('town.jpg'); color: white; background-repeat: no-repeat; background-attachment: fixed;  background-size: cover;" >
+
+<style> /* Internal CSS (внутренний CSS) через style */
+  tr:hover { 
+    background-color: #000000; /* Css комментарий в HTML файле, <!-- --> работать не будет  */
+    transform: scale(1.01); /* Немного увеличивается при нанесения на него курсора */
+    cursor: pointer; /* Курсор меняется на палец */
+  }
+
+  div {
+    width: 30%;
+    min-height: 280px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 10px;
+    box-sizing: border-box;
+    padding: 14px;
+  }
+</style>
+
+<h2 id="A1">Chapter One</h2>
+<p>How we work on new updates: </p>
+<img src="programming.gif" alt="Computer man" style="width:48px; height:48px;">
+<br>
+<a href="#A2">Jump to chapter two</a>
+<br>
+
+<p>Click on the game you want to look at:</p>
+<img src="fight.png" alt="An epic battle of myths and destruction" style="width:384px; height: 256px;" usemap="#workmap">
+<map name="workmap">
+    <area shape="poly" coords="0,0,228,0,146,256,0,256," alt="Elden Ring" href="https://store.steampowered.com/app/1245620/ELDEN_RING/" target="_blank" title="Elden Ring">
+    <area shape="poly" coords="228,0,384,0,384,256,146,256" alt="Hades" href="https://store.steampowered.com/app/1145360/Hades/" target="_blank" title="Hades">
+</map>
+
+<p>More information about these games:</p>
+<table style="width:100%; text-align:center;">
+  <tr>
+    <th>Company</th>
+    <th>Country</th>
+    <th>Game</th>
+  </tr>
+  <tr>
+    <td>Bandai Namco Entertainment</td>
+    <td>Japan</td>
+    <td>Elden Ring</td>
+  </tr>
+  <tr>
+    <td>Supergiant Games</td>
+    <td>United States of America</td>
+    <td>Hades</td>
+  </tr>
+</table>
+
+<p>Prices for each game: </p> <!-- <caption> - можно также использовать чтоб задавать название таблицам  -->
+<table style="width:100%; text-align: center;">
+  <tr>
+    <th>Name of the Game</th>
+    <td>Elden Ring</td>
+    <td>Hades</td>
+  </tr>
+  <tr>
+    <th>Price without discount</th>
+    <td>$39.99 USD</td>
+    <td>$12.49 USD</td>
+  </tr>
+  <tr>
+    <th>Current price</th>
+    <td>$25.99 USD</td>
+    <td>$3.12 USD</td>    
+  </tr>
+  <tr>
+    <th>Lowest Recorded Price</th>
+    <td>$20.99 USD</td>
+    <td>$3.12 USD</td>
+  </tr>
+</table>
+
+<h2 id="A2">Chapter Two</h2>
+<p>Advantages and disadvantages of these Games:</p>
+<ol type="1" style="margin: 0px;">
+  <li>Elden Ring</li>
+  <p style="margin: 5px;">Advantages:</p>
+    <ul type="disc">
+      <li>Huge open world: Exploration is one of the main thrills of the game.</li> <!-- thrills - кайф от игры -->
+      <li>Epic bosses and atmosphere: A dark world, a strong sense of adventure.</li>
+      <li>Deep RPG system: Lots of builds, weapons and magic.</li>
+      <li>Reward for research: You almost always find something useful.</li>
+      <li>Feeling of progress: It is difficult to win, but it is very pleasant.</li>
+    </ul>
+  <p style="margin: 5px;">Disadvantages:</p>
+  <ul type="circle">
+      <li>It's very difficult: You need to learn, otherwise it will hurt.</li> <!-- otherwise - иначе -->
+      <li>You can get lost: There is no clear direction - it is easy not to understand where to go.</li>
+      <li>Camera and AI sometimes mess up</li>
+      <li>Not for short sessions: It's a game for dozens of hours.</li> <!-- dozens - десятки -->
+  </ul>
+  <li>Hades</li>
+  <p style="margin: 5px;">Advantages:</p>
+  <ul type="disc">
+      <li>Very dynamic gameplay: Fast-paced fights, lots of dodges, and combo play almost keep you busy.</li>
+      <li>A huge variety of builds: Each race is unique (weapons + gods + bonuses).</li>
+      <li>Plot through gameplay: Even after death, the story continues — this is a rarity for roguelike.</li>
+      <li>Style and music: Very beautiful art and powerful soundtrack.</li>
+      <li>It is convenient to play in short sessions: One run is about 20-40 minutes</li>
+  </ul>
+  <p style="margin: 5px;">Disadvantages:</p>
+  <ul type="circle">
+      <li>Repeatability: After all, it's roguelike - the same locations over and over again.</li>
+      <li>Difficulty: You often die, especially at the beginning.</li>
+      <li>The plot develops slowly: It takes a lot of running to uncover the story.</li>
+  </ul>
+</ol>
+
+<h2>Verdict with comparison:</h2>
+<div style="background-color:#172E2C; color:#E2B157" class="elden-ring">
+  <h3>Elden Ring</h3>
+  <p>Elden Ring is a large-scale open-world role-playing game with a focus on exploration, atmosphere, and challenging combat.</p>
+  <p>The player is given the freedom to go anywhere, find hidden locations and gradually upgrade the character, which creates a sense of real adventure.</p>
+  <p>At the same time, the high difficulty and lack of clear hints can make the game demanding of time and patience, especially for beginners.</p>
+</div>
+<div style="background-color: #52160B; color:#F3E7D6" class="hades">
+  <h3>Hades</h3>
+  <p>Hades is a dynamic roguelike built around fast-paced fights and repetitive runs, where each attempt is different due to different abilities and combinations of upgrades.</p>
+  <p>The game is easily addictive due to the pace and convenience, it is well suited for short sessions and gradually reveals the plot through repeated playthroughs, although over time there may be some repetition.</p>
+</div>
+<div style="background-color: #1E1B1B; color: #F3E7D6;" class="verdict">
+  <h3 style="color: #E2B157;">Verdict</h3>
+  <p>Elden Ring is a large-scale and challenging open-world game focused on exploration and deep immersion.</p>
+  <p>Hades is a fast and dynamic roguelike that gives you the pleasure of repetitive runs and a variety of builds.</p>
+  <p>As a result, Elden Ring is better suited for a long epic adventure, while Hades is better suited for short but intense gaming sessions.</p>
+</div>
+<br>
+
+
+
+<br>
+<a href="#A1">Jump to chapter one</a>
+<br>
+<span>Other pages:</span>
+<a href="index.html" target="_self">First page</a>
+<a href="second.html" target="_self">Second page</a>
+
+<!-- <p style="margin: 4px;">If you want to view the other pages, press the <b>buttons:</b></p> -->
+<!-- Кнопка как ссылка -->
+<!-- <button onclick="document.location='index.html'" style="margin: 3px;">First page</button> 
+<br>
+<button onclick="document.location='second.html'" style="margin: 3px;">Second page</button>
+-->
+
+</body>
+</html>
