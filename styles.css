@@ -85,7 +85,9 @@ body.page2 {
   text-align: center;
 }
 
-.tables table, .tables th, .tables td {
+.tables table, 
+.tables th, 
+.tables td {
   border: 1px solid white; /* Ширина границ таблицы + цвет, цвет можно также установить через border-color */
   border-collapse: collapse; /* Чтоб не было обводки */
   border-radius: 10px; /* Округление */
@@ -117,7 +119,8 @@ body.page2 {
 
 .cards div {
   width: 30%;
-  height: 300px;
+  min-height: 300px;
+  height: auto;
   display: inline-block;
   text-align: center;
   vertical-align: top;
@@ -125,6 +128,15 @@ body.page2 {
   box-sizing: border-box;
   padding: 14px;
   line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  .cards div {
+    width: 90%;
+    display: block;
+    margin: 0 auto 20px;
+    min-height: auto;
+  }
 }
 
 .hades {
