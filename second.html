@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Site about Games">
+        <meta name="keywords" content="steam-project, games, blast1648"> 
+        <meta name="author" content="blast1648">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Steam</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <title>Steam</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
-<body>
-<p style="font-size:20px;">Here is a quote from <b>Wikipedia</b> about Steam:</p>
-<blockquote cite="https://en.wikipedia.org/wiki/Steam"> <!-- Цитата из источника-->
-Steam ([stiːm], from English "steam") is an online digital distribution service for computer games and software, developed and maintained by Valve. Steam serves as a technical copyright protection tool, a platform for multiplayer gaming and streaming, and a social network for players. The Steam software client also provides installation and regular updates for games, cloud-based game saves, and text and voice communication between players.
-</blockquote>
-<p>Steam's goal is: <q><b>Connect players and developers, allowing people to easily find, buy, create, and discuss games.</b></q></p> <!-- Кавычки -->
-<p>There are some <strong>abbreviations</strong> connected with Steam:</p>
-<ol type="I"> <!-- Аббревиатура + подсказка в виде атрибута title сделанный ввиде нумерованого списка с type римскими цифрами -->
-  <li><abbr title="Valve Anti-Cheat"><b>VAC</b></abbr></li>
-  <li><abbr title="Free to Play"><b>F2P</b></abbr></li>
-  <li><abbr title="Application Programming Interface"><b>API</b></abbr></li>
-</ol>
-<p style="margin: 0px;">The main <b>office</b> of Steam:</p>
-<address> <!-- Адрес -->
-    10400 NE 4th St, Suite 1400<br>
-    Bellevue, Washington, United States<br>
-</address>
-<p style="background-color:LightGray; color:darkslategrey;">Warning for people who love cheating: <em>(Don't read this if you play games honestly.)</em></p>
-<bdo dir="rtl" style="font-size: smaller; border:2px solid Tomato;">If you read this, don't cheat or you will be banned!</bdo> <!-- Текст наоборот -->
-<h5>If you play games without cheating, developers are proud of you!</h5>
-<h5>Interesting fact about Steam: Steam was officially launched by Valve Corporation on September 12, 2003</h5>
-<a href="https://store.steampowered.com/about/" target="_blank"><img src="social.jpg" alt="Information about Steam" title="Click on the picture" style="width:325px; height:150px;"></a>
-<br>
-<span>Other pages:</span>
-<a href="index.html" target="_self">First page</a>
-<a href="third.html" target="_self">Third page</a>
+    <body class="page">
+        <main>
+            <section class="quote">
+                <p class="quote-important">Here is a quote from <b>Wikipedia</b> about Steam:</p>
+                <blockquote cite="https://en.wikipedia.org/wiki/Steam"> <!-- Цитата из источника-->
+                Steam ([stiːm], from English "steam") is an online digital distribution service for computer games and software, developed and maintained by Valve. Steam serves as a technical copyright protection tool, a platform for multiplayer gaming and streaming, and a social network for players. The Steam software client also provides installation and regular updates for games, cloud-based game saves, and text and voice communication between players.
+                </blockquote>
+                <p>Steam's goal is: <q><b>Connect players and developers, allowing people to easily find, buy, create, and discuss games.</b></q></p> <!-- Кавычки -->
+            </section>
 
-</body>
+            <section class="steam-info">
+                <p>There are some <strong>abbreviations</strong> connected with Steam:</p>
+                <ol type="I"> <!-- Аббревиатура + подсказка в виде атрибута title сделанный ввиде нумерованого списка с type римскими цифрами -->
+                <li><abbr title="Valve Anti-Cheat"><b>VAC</b></abbr></li>
+                <li><abbr title="Free to Play"><b>F2P</b></abbr></li>
+                <li><abbr title="Application Programming Interface"><b>API</b></abbr></li>
+                </ol>
+                <p class="steam-text">The main <b>office</b> of Steam:</p>
+                <address> <!-- Адрес -->
+                    10400 NE 4th St, Suite 1400<br>
+                    Bellevue, Washington, United States<br>
+                </address>
+            </section>
+
+            <section class="warning">
+                <p>Warning for people who love cheating: <em>(Don't read this if you play games honestly.)</em></p>
+                <bdo dir="rtl">If you read this, don't cheat or you will be banned!</bdo> <!-- Текст наоборот -->
+                <h5>If you play games without cheating, developers are proud of you!</h5>
+                <h5>Interesting fact about Steam: Steam was officially launched by Valve Corporation on September 12, 2003</h5>
+                <a href="https://store.steampowered.com/about/" target="_blank"><img src="images/social.jpg" alt="Information about Steam" title="Click on the picture" width="325" height="150"></a>
+                <br>
+            </section>
+        </main>
+
+        <nav>
+            <span>Other pages:</span>
+            <a href="index.html" target="_self">First page</a> |
+            <a href="third.html" target="_self">Third page</a> <br><br>
+        </nav>
+
+        <footer class="footer">
+            <p title="Very good app">Created by blast1648 | &copy; 2026</p>
+        </footer>
+    </body>
 </html>

@@ -1,12 +1,58 @@
-body {
-    background-color: rgb(215, 253, 245);
+/* Начало css настройки первой страницы */
+
+h1 { /* Атрибут style указывает на размерность ( мы ее задаем сами ), можно также процентами %  */
+  font-size:50px; 
+  text-align:center;
 }
 
-h5 {
+.footer {
+  background-color: rgb(140, 140, 140, 0.5); 
+  text-align: center; 
+  padding: 3px;
+}
+
+.footer p {
+  font-size: 110%;
+  color: white; 
+  margin: 0;
+}
+
+.poem-text {
+  font-family: verdana;
+}
+
+.poem-app {
+  font-family:courier; 
+  font-size:130%
+}
+
+/* Начало css настройки второй страницы */
+
+.quote-important {
+  font-size:20px;
+}
+
+.steam-text {
+  margin: 0px;
+}
+
+.warning p {
+  background-color:LightGray; 
+  color:darkslategrey;
+}
+
+.warning bdo {
+  font-size: smaller; 
+  border:2px solid Tomato;
+}
+
+.warning h5 {
     border: 2px solid powderblue; /* Определяет размер границы */
     padding: 10px; /* Определяет отсуп между текстом и границей */
-    margin: 15px; /* Определяет отсуп за пределаами границы */
+    margin: 9px; /* Определяет отсуп за пределаами границы */
 }
+
+/* Общие настройки */
 
 a { /* Зеленый цвет ссылок, не подчеркивается */
     color: green;
@@ -20,19 +66,83 @@ a:hover { /* При наведении на ссылку она становит
   text-decoration: underline; 
 }
 
-table, th, td {
-  border :1px solid white; /* Ширина границ таблицы + цвет, цвет можно также установить через border-color */
+body.page {
+    background-color: rgb(215, 253, 245); /* Атрибут style с значением атрибута задающий фоновый цвет */
+}
+
+body.page2 {
+  background-image:url('images/town.jpg'); 
+  color: white; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;  
+  background-size: cover;
+  background-color: rgb(215, 253, 245);
+}
+
+/* Начало css настройки третьей страницы */
+
+.anchor {
+  text-align: center;
+}
+
+.tables table, .tables th, .tables td {
+  border: 1px solid white; /* Ширина границ таблицы + цвет, цвет можно также установить через border-color */
   border-collapse: collapse; /* Чтоб не было обводки */
   border-radius: 10px; /* Округление */
   border-style: dashed; /* Стиль границ таблицы */
 }
 
+.tables tr:hover { 
+  background-color: #000000; /* Css комментарий в HTML файле, <!-- --> работать не будет  */
+  transform: scale(1.01); /* Немного увеличивается при нанесения на него курсора */
+  cursor: pointer; /* Курсор меняется на палец */
+  }
+
+.tables table {
+  width:100%; 
+  text-align:center;
+}
+
+.info-games p {
+  margin: 5px;
+}
+
+.info-games ol {
+  margin: 0px;
+}
+
+.cards {
+  text-align: center;
+}
+
+.cards div {
+  width: 30%;
+  height: 300px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin: 0 15px;
+  box-sizing: border-box;
+  padding: 14px;
+  line-height: 1.3;
+}
+
+.hades {
+  background-color: #52160B; 
+  color: #F3E7D6;
+}
+
 .hades:hover {
-  background-color: #6A2113;
-  color: #FDAB5C;
+  background-color: #4A140C;  
+  color: #E7C9A3;  
   box-shadow: 0 0 15px rgba(253, 171, 92, 0.4);
-  transform: translateY(-2px);
+  transform: translateY(-2px); /* поднимает элемент вверх на 2 пикселя */
   cursor: pointer;
+}
+
+.elden-ring {
+  background-color: #172E2C; 
+  color: #E2B157
 }
 
 .elden-ring:hover {
@@ -43,11 +153,20 @@ table, th, td {
   cursor: pointer;
 }
 
+.verdict {
+  background-color: #1E1B1B; 
+  color: #F3E7D6;
+}
+
 .verdict:hover {
   background-color: #2A2424;
   box-shadow: 0 0 18px rgba(226, 177, 87, 0.25);
   transform: translateY(-2px);
   cursor: pointer;
+}
+
+.verdict h3 {
+  color: #E2B157;
 }
 
 /*  */
