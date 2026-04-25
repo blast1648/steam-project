@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Site about Games">
+        <meta name="keywords" content="steam-project, games, blast1648">
+        <meta name="author" content="blast1648">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>User Registration</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body class="registration">
+        <a href="admin-login.html" class="admin-link">Admin Panel</a>
+
+        <h1>Form for registration</h1>
+        <form id="registrationForm" autocomplete="off" novalidate>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" name="fname" id="fname" placeholder="Enter your name:" required autofocus><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" name="lname" id="lname" placeholder="Enter your surname:" required><br>
+                <label for="email">Enter your email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email:" required><br>
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd" placeholder="Enter your password:" required minlength="8"><br>
+
+                <label for="country">Choose a country where you live:</label><br>
+                <select id="country" name="country" required> <!-- multiple - можно выбрать несколько значений -->
+                    <option value="AZ">Azerbaijan</option> <!-- selected - значение по умолчанию -->
+                    <option value="RU">Russia</option>
+                    <option value="US">USA</option>
+                    <option value="EU">Europe</option> 
+                    <option value="" disabled selected>Select country</option>
+                </select>
+
+                <br>
+                <label for="age">Enter your age (between 13 and 120):</label><br>
+                <input type="number" id="age" name="age" min="13" max="120" required>
+
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend>More information about your preferences</legend>
+
+                <span>Choose the game genres you like:</span><br>
+                <input type="checkbox" id="rpg" name="genres" value="RPG">
+                <label for="rpg">RPG</label><br>
+                <input type="checkbox" id="action" name="genres" value="Roguelike">
+                <label for="action">Roguelike</label><br>
+                <input type="checkbox" id="strategy" name="genres" value="Strategy">
+                <label for="strategy">Strategy</label><br><br>
+
+                <span>Which platform you use for games:</span><br>
+                <input id="platform" list="platforms" name="platforms">
+                <datalist id="platforms">
+                    <option value="Steam">
+                    <option value="Epic Games Store">
+                    <option value="GOG Galaxy">
+                    <option value="Origin">
+                    <option value="Ubisoft Connect">
+                </datalist><br>
+
+                <span>Did you have any account restrictions? If yes, how much:</span><br>
+                <input type="number" min="0" max="10" id="bans" name="bans">
+
+                <br>
+                <label for="phone">Enter your phone number:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10,12}" title="Format: 1234567890"><br>
+
+                <label for="link">Link of your steam account:</label><br>
+                <input type="url" id="link" name="link">
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend>Feedback</legend>
+                <textarea id="feedback" name="message" rows="10" cols="40" placeholder="Here you can write your message. It can be a review of the game, or a wish for the future, or anything else you want to share with us. We will read all your messages and take them into account when developing our platform. Thank you for your feedback!"></textarea>
+            </fieldset>
+
+            <p class="reg-terms">Do you agree to the terms and conditions of this website?</p>
+            <input type="radio" id="yes" name="terms" value="yes" required>
+            <label for="yes">I agree to the terms and conditions</label><br>
+            <input type="radio" id="no" name="terms" value="no" required>
+            <label for="no">I don't agree to the terms and conditions</label>
+
+            <br>
+            <button type="submit">Submit Form</button>
+            <button type="reset">Reset Form</button>
+
+            <p id="formMessage"></p>
+        </form>
+
+        <footer class="footer">
+            <p title="Very good app">Created by blast1648 | &copy; 2026</p>
+        </footer>
+    </body>
+</html>
