@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site about Games">
+    <meta name="keywords" content="steam-project, games, blast1648">
+    <meta name="author" content="blast1648">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="admin.js" defer></script>
+  </head>
+
+  <body class="admin-page">
+    <h1>Admin Panel</h1>
+
+    <form action="/admin-logout" method="post" class="logout-form">
+      <button type="submit" class="logout-btn">Logout</button>
+    </form>
+
+    <form id="searchForm" class="admin-search-form">
+      <label for="searchField">Search by:</label>
+          <select id="searchField">
+          <option value="all">All columns</option>
+          <option value="first_name">First name</option>
+          <option value="last_name">Last name</option>
+          <option value="email">Email</option>
+          <option value="country">Country</option>
+          <option value="age">Age</option>
+          <option value="genres">Genres</option>
+          <option value="platform">Platform</option>
+          <option value="bans">Bans</option>
+          <option value="phone">Phone</option>
+          <option value="steam_link">Steam link</option>
+          <option value="feedback">Feedback</option>
+          </select>
+      <label for="search">Search users:</label>
+      <input type="text" id="search" placeholder="Enter search value">
+      <div class="admin-buttons">
+        <button type="submit">Search</button>
+        <button type="button" id="resetSearch">Reset</button>
+      </div>
+    </form>
+
+    <section class="table-card">
+      <h2>Users Personal Data</h2>
+      <div class="table-container">
+        <table class="users-table" id="usersTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>First name</th>
+              <th>Last name</th>
+              <th>Email</th>
+              <th>Password status</th>
+              <th>Country</th>
+              <th>Age</th>
+              <th>Phone</th>
+              <th>Created at</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="table-card">
+      <h2>User Extra Information</h2>
+      <div class="table-container">
+        <table class="users-table" id="extraInfoTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>User ID</th>
+              <th>Genres</th>
+              <th>Platform</th>
+              <th>Bans</th>
+              <th>Steam link</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="table-card">
+      <h2>User Feedback</h2>
+      <div class="table-container">
+        <table class="users-table" id="feedbackTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>User ID</th>
+              <th>Message</th>
+              <th>Created at</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="table-card">
+      <h2>Audit Log</h2>
+
+      <div class="table-container">
+        <table class="users-table" id="auditLogTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Action</th>
+              <th>User ID</th>
+              <th>Details</th>
+              <th>Created at</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,795 @@
+/* ----- Общие настройки ----- */
+
+a { 
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover { 
+  color: red;
+  background-color: transparent;
+  text-decoration: underline; 
+}
+
+.page {
+    background-color: rgb(215, 253, 245); 
+}
+
+.page2 {
+  background-image:url('images/town.jpg'); 
+  color: white; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;  
+  background-size: cover;
+  background-color: rgb(215, 253, 245);
+}
+
+.footer {
+  width: 90%;
+  max-width: 750px;
+  margin: 0 auto 30px;
+  padding: 12px;
+  background-color: rgba(140, 140, 140, 0.5);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.footer p {
+  font-size: 15px;
+  color: white;
+  margin: 0;
+}
+
+/* ----- Начало css настройки первой страницы ----- */
+
+h1 {
+  font-size: 50px; 
+  text-align: center;
+}
+
+.poem-text {
+  font-family: verdana;
+}
+
+.poem-app {
+  font-family: courier; 
+  font-size: 130%
+}
+
+/* ----- Начало css настройки второй страницы ----- */
+
+.quote-important {
+  font-size:20px;
+}
+
+.steam-info ol {
+  list-style-type: upper-roman;
+}
+
+.steam-text {
+  margin: 0px;
+}
+
+.warning p {
+  background-color:LightGray; 
+  color:darkslategrey;
+}
+
+.warning bdo {
+  font-size: smaller; 
+  border:2px solid Tomato;
+}
+
+.warning h5 {
+    border: 2px solid powderblue; 
+    padding: 10px; 
+    margin: 9px;
+}
+
+/* Начало css настройки третьей страницы */
+
+.anchor {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.tables table, 
+.tables th, 
+.tables td {
+  border: 1px solid white; /* Ширина границ таблицы + цвет, цвет можно также установить через border-color */
+  border-collapse: collapse; /* Чтоб не было обводки */
+  border-radius: 10px; /* Округление */
+  border-style: dashed; /* Стиль границ таблицы */
+}
+
+.tables tr:hover { 
+  background-color: #000000; /* Css комментарий в HTML файле, <!-- --> работать не будет  */
+  transform: scale(1.01); /* Немного увеличивается при нанесения на него курсора */
+  cursor: pointer; /* Курсор меняется на палец */
+  }
+
+.tables table {
+  width:100%; 
+  text-align:center;
+}
+
+.info-games p {
+  margin: 5px;
+}
+
+.info-games ol {
+  margin: 0px;
+  list-style-type: none;
+  padding-left: 20px;
+  list-style-position: inside;
+}
+
+.info-games ol > li {
+  line-height: 1.3;
+  margin-bottom: 35px;
+  padding: 10px 15px;
+  border-left: 3px solid #66c0f4;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.info-header {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.info-games h3 {
+  margin-bottom: 10px;
+  color: #66c0f4;
+}
+
+.info-games h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #c7d5e0;
+}
+
+.info-games ul {
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.info-games ol > li:hover {
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.ul-disc {
+  list-style-type: disc;
+}
+
+.ul-circle {
+    list-style-type: circle;
+}
+
+.cards {
+  text-align: center;
+}
+
+.cards div {
+  width: 30%;
+  min-height: 300px;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin: 0 15px;
+  box-sizing: border-box;
+  padding: 14px;
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) { /* медиазапрос, применяй стили ниже, только если ширина экрана 768 пикселей или меньше */
+  .cards div {
+    width: 90%; /* Ширина каждого блока будет 90% от ширины родительского элемента */
+    display: block; /* Делает каждый div блочным элементом, блок занимает отдельную строку, карточки больше не стоят рядом, каждая идет с новой строки */
+    margin: 0 auto 20px; /* Внещние отступы, 0 сверху, auto чтоб блок был в центре, 20px чтоб не прилипал к другим блокам */
+    min-height: auto; /* Убираем фиксированную высоту, чтобы блок мог адаптироваться к содержимому */
+  }
+}
+
+.hades {
+  background-color: #52160B; 
+  color: #F3E7D6;
+}
+
+.hades:hover {
+  background-color: #4A140C;  
+  color: #E7C9A3;  
+  box-shadow: 0 0 15px rgba(253, 171, 92, 0.4);
+  transform: translateY(-2px); /* поднимает элемент вверх на 2 пикселя */
+}
+
+.elden-ring {
+  background-color: #172E2C; 
+  color: #E2B157
+}
+
+.elden-ring:hover {
+  background-color: #253A37;
+  color: #F5CC69;
+  box-shadow: 0 0 15px rgba(226, 177, 87, 0.4);
+  transform: translateY(-2px);
+}
+
+.verdict {
+  background-color: #1E1B1B; 
+  color: #F3E7D6;
+}
+
+.verdict:hover {
+  background-color: #2A2424;
+  box-shadow: 0 0 18px rgba(226, 177, 87, 0.25);
+  transform: translateY(-2px);
+}
+
+.verdict h3 {
+  color: #E2B157;
+}
+
+/* ----- Начало css настройки страницы form ----- */
+
+.registration {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #2b2d42);
+  margin: 0;
+}
+
+.registration * {
+  box-sizing: border-box;
+}
+
+.registration h1 {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+/* настройка стилистики кнопок */
+
+.registration button {
+  padding: 13px 22px;
+  margin-top: 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.registration button[type="submit"] {
+  background-color: #4b4fd8;
+  color: white;
+}
+
+.registration button[type="submit"]:hover {
+  background-color: #373bb3;
+  transform: translateY(-2px);
+}
+
+.registration button[type="reset"] {
+  background-color: #e5e5e5;
+  color: #222;
+}
+
+.registration button[type="reset"]:hover {
+  background-color: #cccccc;
+  transform: translateY(-2px);
+}
+
+/* настройка стилистики формы */
+
+.registration form {
+  width: 90%;
+  max-width: 750px;
+  margin: 0 auto 35px;
+  background-color: white;
+  padding: 30px;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.registration fieldset {
+  border: 2px solid #d6d6e7;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 25px;
+  background-color: #fafafa;
+}
+
+.registration legend {
+  padding: 0 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4b4fd8;
+}
+
+.registration input,
+.registration select,
+.registration textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border: 1.5px solid #cfcfe0;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.registration input:focus,
+.registration textarea:focus,
+.registration textarea:focus {
+  border-color: #4b4fd8;
+  box-shadow: 0 0 0 3px rgba(75, 79, 216, 0.15);
+}
+
+.registration input[type="radio"],
+.registration input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.registration input[type="checkbox"] + label,
+.registration input[type="radio"] + label {
+  display: inline;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.registration label,
+.registration span {
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.reg-terms {
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+}
+
+.registration textarea {
+  resize: vertical;
+  min-height: 150px;
+  max-height: 250px;
+  line-height: 1.5;
+}
+
+.admin-link {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  padding: 10px 16px;
+  background-color: rgba(79, 87, 232, 0.9);
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: 0.2s;
+}
+
+.admin-link:hover {
+  background-color: #3e46d1;
+  transform: translateY(-2px);
+  color: white;
+  text-decoration: none;
+}
+
+/* медиазапрос для телефонов */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  fieldset {
+    padding: 18px;
+  }
+
+  button {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-link {
+    top: 12px;
+    right: 12px;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+
+/* Настройка админ страницы + админ логина */
+
+body.admin-page {
+  background: linear-gradient(90deg, #17192f, #2a2d4f);
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px 20px 60px;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+.admin-page h1 {
+  text-align: center;
+  font-size: 56px;
+  margin-bottom: 30px;
+  color: #fff8ef;
+}
+
+.admin-search-form {
+  max-width: 850px;
+  margin: 0 auto 35px;
+  background: #f4f4f4;
+  color: #1f1f1f;
+  padding: 35px;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.admin-search-form label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.admin-search-form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 18px;
+  font-size: 16px;
+  border: 1px solid #c7cbe0;
+  border-radius: 14px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.admin-search-form input:focus {
+  border-color: #555ce2;
+  box-shadow: 0 0 0 4px rgba(85, 92, 226, 0.15);
+}
+
+.admin-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.admin-buttons button {
+  padding: 14px 26px;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.admin-buttons button[type="submit"] {
+  background: #4f57e8;
+  color: white;
+}
+
+.admin-buttons button[type="submit"]:hover {
+  background: #3e46d1;
+}
+
+#resetSearch {
+  background: #e5e5e5;
+  color: #111;
+}
+
+#resetSearch:hover {
+  background: #d6d6d6;
+}
+
+.table-card {
+  max-width: 1400px;
+  margin: 25px auto;
+  background: #f4f4f4;
+  color: #1c1c1c;
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.table-card h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #23264a;
+  text-align: center;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+  min-width: 1200px;
+  border-collapse: collapse;
+  font-size: 15px;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.users-table thead {
+  background: #4f57e8;
+  color: white;
+}
+
+.users-table th,
+.users-table td {
+  padding: 14px 16px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.users-table th {
+  font-size: 15px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.users-table tbody tr:nth-child(even) {
+  background: #f8f9ff;
+}
+
+.users-table tbody tr:hover {
+  background: #eef1ff;
+}
+
+.users-table td {
+  color: #222;
+  line-height: 1.4;
+}
+
+.users-table a {
+  color: #3e46d1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.users-table a:hover {
+  text-decoration: underline;
+}
+
+.empty-value {
+  color: #8d8d8d;
+  font-style: italic;
+}
+
+.genre-badge {
+  display: inline-block;
+  background: #e8ebff;
+  color: #2f39c0;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 2px 6px 2px 0;
+}
+
+.feedback-cell {
+  max-width: 240px;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.email-cell {
+  white-space: nowrap;
+}
+
+.created-cell {
+  white-space: nowrap;
+}
+
+.link-cell a {
+  white-space: nowrap;
+}
+
+.password-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.password-status.hashed {
+  background-color: #e7f8ed;
+  color: #1f8a4c;
+}
+
+.password-status.missing {
+  background-color: #ffeaea;
+  color: #c0392b;
+}
+
+.admin-search-form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 18px;
+  font-size: 16px;
+  border: 1px solid #c7cbe0;
+  border-radius: 14px;
+  outline: none;
+  margin-bottom: 18px;
+  background-color: white;
+}
+
+.admin-search-form select:focus {
+  border-color: #555ce2;
+  box-shadow: 0 0 0 4px rgba(85, 92, 226, 0.15);
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.logout-form {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+.admin-login-container {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.admin-login-card {
+  width: 100%;
+  max-width: 480px;
+  background-color: #f4f4f4;
+  color: #1f1f1f;
+  padding: 38px;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.admin-login-card h1 {
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: 42px;
+  color: #23264a;
+}
+
+.admin-login-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.admin-login-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #23264a;
+}
+
+.admin-login-form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 17px;
+  font-size: 16px;
+  border: 1px solid #c7cbe0;
+  border-radius: 14px;
+  outline: none;
+  margin-bottom: 8px;
+}
+
+.admin-login-form input:focus {
+  border-color: #555ce2;
+  box-shadow: 0 0 0 4px rgba(85, 92, 226, 0.15);
+}
+
+.login-error {
+  min-height: 22px;
+  margin: 8px 0 18px;
+  color: #d93025;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.admin-login-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 14px;
+  background-color: #4f57e8;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.admin-login-btn:hover {
+  background-color: #3e46d1;
+  transform: translateY(-2px);
+}
+
+.admin-login-form label {
+  text-align: center;
+}
+
+.back-link {
+  display: block;
+  margin-top: 22px;
+  text-align: center;
+  color: #4f57e8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .admin-login-card {
+    padding: 28px 22px;
+  }
+
+  .admin-login-card h1 {
+    font-size: 34px;
+  }
+}

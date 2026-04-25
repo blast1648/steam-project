@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Site about Games">
+        <meta name="keywords" content="steam-project, games, blast1648">
+        <meta name="author" content="blast1648">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Admin Login</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body class="admin-page">
+        <main class="admin-login-container">
+            <section class="admin-login-card">
+                <h1>Admin Login</h1>
+                <p class="admin-login-subtitle">
+                    Enter the admin password to access the database panel.
+                </p>
+
+                <form action="/admin-login" method="post" class="admin-login-form">
+                    <label for="password">Admin password</label>
+
+                    <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter admin password"
+                    required
+                    >
+
+                    <p id="loginError" class="login-error"></p>
+
+                    <button type="submit" class="admin-login-btn">
+                    Login
+                    </button>
+                </form>
+
+                <a href="/index.html" class="back-link">Back to main page</a>
+            </section>
+        </main>
+
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const loginError = document.getElementById("loginError");
+
+            if (params.get("error") === "wrong_password") {
+                loginError.textContent = "Wrong password. Please try again.";
+
+                window.history.replaceState({}, document.title, "/admin-login.html");
+            }
+        </script>
+    </body>
+</html>
